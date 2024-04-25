@@ -42,7 +42,7 @@ wp.init()
 
 @dataclass
 class MetaData(DatapipeMetaData):
-    name: str = "DeltaresDarcy"
+    name: str = "Darcy2D"
     # Optimization
     auto_device: bool = True
     cuda_graphs: bool = True
@@ -50,7 +50,7 @@ class MetaData(DatapipeMetaData):
     ddp_sharding: bool = False
 
 
-class Deltares2D(Datapipe):
+class Darcy2D(Datapipe):
     """2D Darcy flow benchmark problem datapipe.
 
     This datapipe continuously generates solutions to the 2D Darcy equation with variable
